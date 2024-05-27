@@ -1,0 +1,717 @@
+/* Applying JakartaSans font */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+      font-family: 'JakartaSans', sans-serif;
+      font-size: 20px;
+      
+  }
+  
+  .navbar {
+    /* padding-left: 132px !important;
+    padding-right: 132px !important; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* Styles for normal nav links */
+  .navbar-nav .nav-link {
+    color: #2e2e2e;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .navbar-nav .nav-link:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+  }
+  /* Styles for active nav link */
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+    color: #563086 !important;
+  }
+  
+  
+  
+  /* Remove margin from all nav links */
+  .navbar-nav .nav-link {
+    margin-left: 0 !important;
+  }
+  
+  /* Styling for the logo */
+  .logo img {
+    width: 46px;
+    height: 47px;
+  }
+  
+  /* Ensure all nav links are aligned to the right */
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    /* .navbar {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    } */
+  
+    /* Ensure the logo and hamburger menu respect the padding */
+    .navbar-toggler,
+    .logo {
+      margin-left: 0;
+    }
+  
+    /* Ensure the navbar-collapse is full width */
+    .navbar-collapse {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    /* Optional: Adjust nav-link alignment on small screens if needed */
+    .navbar-nav {
+      margin-left: 0;
+    }
+  }
+header{
+    padding: 0px;
+}
+
+#intro {
+    font-size: 20px;
+    /* font-weight: 600; */
+    text-align: left;
+    /* margin-left: 132px; */
+    width: 675px;
+    color: #2E2E2E;
+}
+
+#intro h4 {
+    font-size: 32px;
+    margin-bottom: 6px;
+    font-weight: bolder;
+}
+
+#intro {
+    /* padding: 20px; */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+#intro p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.highlight {
+    color: rgba(86, 48, 134, 1);
+}
+
+.page-container {
+    padding: 0 132px;
+    /* Initial padding for large screens */
+    /* max-width: 1440px; */
+    /* Optional: Limit the max width for very large screens */
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+
+    /* For tablets, e.g., iPad Pro 11 */
+
+    .page-container {
+        margin-left: 80px;
+        margin-right: 80px;
+        padding: 0px;
+    }
+
+    #intro h4 {
+        font-size: 28px;
+        /* Adjust as needed */
+    }
+
+    #intro p {
+        font-size: 18px;
+        /* Adjust as needed */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* For smaller tablets and large phones */
+    .page-container {
+        margin-left: 20px; /* Adjusted margin for phones */
+        margin-right: 20px;
+        padding: 0px;
+         /* Adjusted margin for phones */
+    }
+
+    .project-container h4{
+        margin-bottom: 0px !important;
+    }
+    #intro h4 {
+        font-size: 24px;
+        /* Adjust as needed */
+    }
+
+    #intro p {
+        font-size: 17px;
+        /* Adjust as needed */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* For small phones */
+    .page-container {
+        margin-left: 20px; /* Adjusted margin for phones */
+        margin-right: 20px;
+        padding: 0px; /* Adjusted margin for phones */
+    }
+
+    #intro h4 {
+        font-size: 20px;
+        /* Minimum size */
+    }
+
+    #intro p {
+        font-size: 16px;
+        /* Minimum size */
+    }
+}
+
+
+
+
+.buttons {
+    text-align: left;
+    margin-top: 12px !important;
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.blob-btn {
+    white-space: nowrap;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.buttons {
+    margin-top: 32px;
+    border-radius: 30px;
+}
+
+.blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #563086;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #563086;
+    border-radius: 30px;
+}
+
+.blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+}
+
+.blob-btn:hover {
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+}
+
+.blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+}
+
+.blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: #563086;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+
+.blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+    left: 25%;
+    transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+    left: 50%;
+    transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+    left: 75%;
+    transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    /* For smaller tablets and large phones */
+    .blob-btn {
+        padding: 16px 36px;
+        font-size: 14px;
+    }
+
+    .blob-btn:before {
+        border: 2px solid #563086;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* For small phones */
+    .blob-btn {
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+
+    .blob-btn:before {
+        border: 2px solid #563086;
+    }
+}
+
+
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+    /* Add gap between cards */
+}
+
+.project-card {
+    /* background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px; */
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 20px);
+    /* Two cards side by side, with gap considered */
+    max-width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.project-card .description {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.project-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Add gap between tags */
+}
+
+/* .project-card .fon {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    padding: 5px 10px;
+} */
+
+.project-card .slovo {
+    font-size: 0.9em;
+}
+
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Ensure equal spacing between cards */
+    margin: 60px 132px;
+    /* Adjust as needed */
+}
+
+.projects-container h4 {
+    color: rgba(46, 46, 46, 1);
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.project-card {
+    width: calc(50% - 32px);
+    /* Adjust as needed for 2 cards per row with margins */
+    margin-bottom: 40px;
+    /* Adjust as needed */
+    box-sizing: border-box;
+    /* Include padding and borders in the width calculation */
+}
+
+.project-card img {
+    width: 572px;
+    height: 386px;
+    object-fit: cover;
+    /* Ensure the image fills the container */
+    margin-bottom: 4px;
+    /* Adjust as needed */
+}
+
+.project-card h3 {
+    color: #2E2E2E;
+    font-size: 36px;
+    /* Adjust as needed */
+    margin-top: 4px;
+    /* Adjust as needed */
+    margin-bottom: 0px;
+    /* Adjust as needed */
+}
+
+.description {
+    font-size: 18px;
+    font-weight: medium;
+    color: #464646;
+    margin-top: 4px;
+    /* Adjust as needed */
+    margin-bottom: 12px;
+    /* Adjust as needed */
+}
+
+.tags {
+    margin-top: 10px;
+    font-size: 20px;
+    /* Adjust as needed */
+}
+
+.fon {
+    display: inline-block;
+    background-color: #916ac344;
+    color: #563086;
+    overflow: visible;
+    padding: 4px 0px;
+    margin-left: 8px;
+    margin-right: 12px;
+    /* position: relative; */
+    height: 16px;
+}
+
+.slovo {
+    position: relative;
+    left: -8px;
+    top: -2px;
+
+
+}
+
+@media (max-width: 1200px) {
+    .projects-container {
+        margin: 60px 80px;
+        /* Adjust margins for smaller desktops */
+    }
+
+    .project-card img {
+        width: 480px;
+        height: 320px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    /* For tablets */
+    .projects-container {
+        margin: 0 80px;
+        /* Adjust margins for tablets */
+        gap: 20px;
+        /* Add gap between cards */
+    }
+
+    .project-card {
+        width: calc(50% - 20px);
+        /* Two cards per row */
+        margin-bottom: 30px;
+    }
+
+    .project-card img {
+        width: 325px;
+        height: 220px;
+    }
+
+    .project-card h3 {
+        font-size: 28px;
+    }
+
+    .tags {
+        font-size: 18px;
+    }
+
+    .description {
+        display: none;
+        /* Hide description on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* For phones */
+    .projects-container {
+        flex-direction: column;
+        /* Ensure single column layout */
+        margin: 0 20px;
+        /* Adjust margins for phones */
+        gap: 32px;
+        /* Add gap between cards */
+    }
+
+    .project-container h4{
+        display: none !important;
+    }
+
+    .project-card {
+        width: 100%;
+        /* Full width for phones */
+        flex: 0 0 100%;
+        /* Override flex properties */
+        max-width: 100%;
+        /* Ensure it doesn't shrink */
+        margin: 0 0 20px 0;
+        /* Margin bottom for spacing */
+        box-sizing: border-box;
+        /* Ensure padding and borders are included in the width calculation */
+    }
+
+    .project-card img {
+        width: 100%;
+        /* Full width image */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .tags {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+
+
+footer {
+    background-color: #916ac386;
+    padding-left: 132px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* Adjust as needed */
+    text-align: left;
+
+}
+
+.contactmsg {
+    font-size: 24px;
+    color: #2E2E2E;
+}
+
+.sociallinks {
+    color: #313131;
+    font-size: 18px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    /* Adjust as needed */
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0px;
+}
+
+footer a {
+    padding-right: 24px;
+    color: #464646;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    /* Adjust as needed */
+}
+
+footer nav ul li:last-child {
+    margin-right: 0;
+    margin-left: 0px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #563086;
+}
+
+
+
+.project-card h3 {
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+.project-card:hover h3 {
+    color: #563086;
+    text-decoration: none !important;
+    /* Change text color on hover */
+}
+
+.project-card a {
+    overflow: hidden;
+    /* Hide any overflow to prevent clipping */
+}
+
+.project-card img {
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+    /* Scale up the image on hover */
+}
+
+.project-card a:hover,
+.project-card a:focus,
+.project-card a:active {
+    text-decoration: none;
+    /* Remove underline on hover, focus, and active states */
+}
+
+@media (max-width: 1200px) {
+    footer {
+        padding: 20px 80px;
+        /* Margin for smaller desktops */
+        font-size: 0.9rem;
+        /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* For tablets */
+    footer {
+        padding: 20px 80px;
+        /* Margin for tablets */
+        font-size: 0.85rem;
+        /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* For phones */
+    footer {
+        padding: 20px 20px;
+        /* Margin for phones */
+        font-size: 0.75rem;
+        /* Smallest font size */
+    }
+}
