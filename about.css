@@ -443,76 +443,8 @@ body {
   }
 }
 
-footer {
-  background-color: #916ac386;
-  padding-left: 132px;
-  padding-bottom: 20px;
-  padding-top: 20px; /* Adjust as needed */
-  text-align: left;
-  margin-top: 120px;
 
-}
 
-.contactmsg {
-  font-size: 24px;
-  color: #2E2E2E;
-}
-
-.sociallinks{
-  color: #313131;
-  font-size: 18px;
-}
-footer p {
-  margin-bottom: 10px; /* Adjust as needed */
-}
-
-footer nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 0px;
-}
-
-footer a{
-  padding-right: 24px;
-  color: #464646;
-}
-footer nav ul li {
-  display: inline;
-  margin-right: 0px; 
-  margin-left: 0px;
-  padding-left: 0px;/* Adjust as needed */
-}
-
-footer nav ul li:last-child {
-  margin-right: 0;
-  margin-left: 0px;
-}
-
-footer a:hover{
-  text-decoration: none;
-  color: #563086;
-}
-
-@media (max-width: 1200px) {
-  footer {
-      padding: 20px 80px; /* Margin for smaller desktops */
-      font-size: 0.9rem; /* Slightly smaller font size */
-  }
-}
-
-@media (max-width: 1024px) { /* For tablets */
-  footer {
-      padding: 20px 80px; /* Margin for tablets */
-      font-size: 0.85rem; /* Smaller font size */
-  }
-}
-
-@media (max-width: 768px) { /* For phones */
-  footer {
-      padding: 20px 20px; /* Margin for phones */
-      font-size: 0.75rem; /* Smallest font size */
-  }
-}
 
 
 .slider{
@@ -522,3 +454,28 @@ footer a:hover{
 .text2{
   margin-bottom: 60px;
 }
+
+.colorful-frame{
+  padding-top: 100px;
+}
+
+.blob-btn{
+  margin-right: 20px !important;
+}
+
+.colorful-frame {
+  background: url('banner.svg') no-repeat center center;
+  background-size: cover;
+  margin-top: 60px;
+  padding: 60px 120px;
+  color: #000;
+  font-size: 40px; /* Adjust text color based on your frame's colors */
+}
+
+@media (max-width: 850px){
+  .colorful-frame{
+      padding: 30px 20px;
+
+  }
+}
+
