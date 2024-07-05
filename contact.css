@@ -120,12 +120,7 @@ html, body {
     margin-right: 20px;
 }
 }
-@media(max-width:1200px){
-  .message, .button-container{
-    margin-left: 80px;
-    margin-right: 80px;
-}
-}
+
 
 *, *:before, *:after {
     box-sizing: border-box;
