@@ -13,8 +13,8 @@ body {
 }
 
 .navbar {
-  padding-left: 132px !important;
-  padding-right: 132px !important;
+  margin-left: 132px ;
+  margin-right: 132px ;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -58,8 +58,8 @@ body {
 @media (max-width: 768px) {
   /* Adjust padding for smaller screens */
   .navbar {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
 
   /* Ensure the logo and hamburger menu respect the padding */
@@ -101,15 +101,31 @@ html, body {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
+  min-height: 100vh;
+   /* Ensure the container takes up at least the full height of the viewport */
 }
 
 .page-container {
   flex: 1; /* Allow the header and main to grow and take up available space */
 }
 
+.message, .button-container{
+  margin-left: 132px;
+  margin-right: 132px;
+}
 
-
+@media(max-width:768px){
+  .message, .button-container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+@media(max-width:1200px){
+  .message, .button-container{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+}
 
 *, *:before, *:after {
     box-sizing: border-box;
@@ -288,87 +304,8 @@ html, body {
   }
   }
   
-/* @media (max-width: 768px){
-  .button-container{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-} */
 
 
-footer {
-  background-color: #916ac386;
-  padding-left: 132px;
-  padding-bottom: 20px;
-  padding-top: 20px; /* Adjust as needed */
-  text-align: left;
 
-}
 
-.contactmsg {
-  font-size: 24px;
-  color: #2E2E2E;
-}
-
-.sociallinks{
-  color: #313131;
-  font-size: 18px;
-}
-footer p {
-  margin-bottom: 10px; /* Adjust as needed */
-}
-
-footer nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 0px;
-}
-
-footer a{
-  padding-right: 24px;
-  color: #464646;
-}
-footer nav ul li {
-  display: inline;
-  margin-right: 0px; 
-  margin-left: 0px;
-  padding-left: 0px;/* Adjust as needed */
-}
-
-footer nav ul li:last-child {
-  margin-right: 0;
-  margin-left: 0px;
-}
-
-footer a:hover{
-  text-decoration: none;
-  color: #563086;
-}
-
-@media (max-width: 1200px) {
-  footer {
-      padding: 20px 80px; /* Margin for smaller desktops */
-      font-size: 0.9rem; /* Slightly smaller font size */
-  }
-}
-
-@media (max-width: 1024px) { /* For tablets */
-  footer {
-      padding: 20px 80px; /* Margin for tablets */
-      font-size: 0.85rem; /* Smaller font size */
-  }
-}
-
-@media (max-width: 768px) { /* For phones */
-  footer {
-      padding: 20px 20px; /* Margin for phones */
-      font-size: 0.75rem; /* Smallest font size */
-  }
-}
-
-h2,
-.button-container{
-  margin-left: 132px;
-  margin-right: 132px;
-}
 
