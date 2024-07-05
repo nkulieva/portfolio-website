@@ -88,7 +88,7 @@ header{
     /* font-weight: 600; */
     text-align: left;
     /* margin-left: 132px; */
-    width: 675px;
+    width: 720px;
     color: #2E2E2E;
 }
 
@@ -357,7 +357,9 @@ header{
     }
 }
 
-
+.projects-container h4{
+    margin-bottom: 20px !important;
+}
 
 .project-container {
     display: flex;
@@ -685,33 +687,122 @@ footer a:hover {
     /* Remove underline on hover, focus, and active states */
 }
 
-@media (max-width: 1200px) {
-    footer {
-        padding: 20px 80px;
-        /* Margin for smaller desktops */
-        font-size: 0.9rem;
-        /* Slightly smaller font size */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 300px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-image {
+    width: 100% !important;
+    height: auto;
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-title {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+  }
+  
+  .project-description {
+    margin: 0 0 15px;
+    margin-bottom: 32px !important;
+    line-height: 120%;
+    color: #555;
+  }
+  
+  .project-tags {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tag {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 90%;
+    }
+  }
+
+.projects{
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+@media (max-width: 480px) {
+    .projects {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0px;
+    }
+    .project-description{
+        display: none;
+    }
+
+    .project-info{
+        padding-top: 4px;
+    }
+    .latest{
+        margin-left: 20px !important;
+        font-size: 24px;
     }
 }
 
-@media (max-width: 1024px) {
-
-    /* For tablets */
-    footer {
-        padding: 20px 80px;
-        /* Margin for tablets */
-        font-size: 0.85rem;
-        /* Smaller font size */
-    }
+.latest{
+    margin-left: 120px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+.colorful-frame{
+    padding-top: 100px;
+}
 
-    /* For phones */
-    footer {
-        padding: 20px 20px;
-        /* Margin for phones */
-        font-size: 0.75rem;
-        /* Smallest font size */
+.blob-btn{
+    margin-right: 20px !important;
+}
+
+.colorful-frame {
+    background: url('banner.svg') no-repeat center center;
+    background-size: cover;
+    margin-top: 60px;
+    padding: 60px 120px;
+    color: #000;
+    font-size: 40px; /* Adjust text color based on your frame's colors */
+}
+
+@media (max-width: 850px){
+    .colorful-frame{
+        padding: 30px 20px;
+
     }
 }
